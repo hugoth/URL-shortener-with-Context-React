@@ -7,7 +7,7 @@ class ContextUrl extends Component {
   state = {
     urls: null,
     url: "",
-    result: null
+    status: null
   };
 
   handleChange = e => {
@@ -31,10 +31,14 @@ class ContextUrl extends Component {
           visits: 0
         };
         listUrl.push(newUrl);
-        this.setState({ urls: listUrl, result: 200 });
+        this.setState({ urls: listUrl, result: 200 }, () => {
+          this.setState({ status: null });
+        });
       })
       .catch(error => {
-        this.setState({ result: error.response.status });
+        this.setState({ status: error.response.status }, () => {
+          this.setState({ status: null });
+        });
       });
   };
 
@@ -45,7 +49,8 @@ class ContextUrl extends Component {
           urls: this.state.urls,
           handleChange: this.handleChange,
           handleSubmit: this.handleSubmit,
-          result: this.state.result
+          status: this.state.status,
+          handleRefreshAlert: this.handleRefreshAlert
         }}
       >
         {this.props.children}

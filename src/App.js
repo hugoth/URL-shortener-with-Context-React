@@ -2,6 +2,7 @@ import React from "react";
 import ContextUrl from "./Services/ContextUrl";
 import Form from "./Components/Form/Form";
 import List from "./Components/List/List";
+import Alerts from "./Components/Alerts/Alerts";
 
 import "./index.css";
 
@@ -20,6 +21,7 @@ function App() {
             </div>
           </div>
         </div>
+        <Alerts />
       </>
     </ContextUrl.Provider>
   );
