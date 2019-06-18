@@ -1,0 +1,35 @@
+.content-list {
+  width: 1024px;
+}
+
+.list-title {
+  display: flex;
+}
+
+.list-title p {
+  height: 3rem;
+  padding: 2rem 0 0 2rem;
+  width: 30rem;
+  color: grey;
+  background-color: rgb(245, 245, 245);
+}
+
+.list-url {
+  list-style: none;
+}
+
+.list-url li {
+  display: flex;
+}
+
+.list-url p {
+  width: 30rem;
+  height: 3rem;
+  padding-left: 2rem;
+
+  border-bottom: 1px solid grey;
+}
+
+#visits {
+  width: 5rem;
+}

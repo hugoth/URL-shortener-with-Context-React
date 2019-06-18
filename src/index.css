@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  flex: 1;
+  margin: auto;
+  justify-content: center;
+  background-color: rgb(85, 89, 193);
+}
+
+.header {
+  height: 15rem;
+  width: 1024px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list {
+  background-color: white;
+  display: flex;
+  margin: auto;
+  padding-top: 5rem;
+  justify-content: center;
+}

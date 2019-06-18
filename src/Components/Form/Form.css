@@ -1,0 +1,24 @@
+.input input {
+  margin-top: 1rem;
+  width: 45rem;
+  height: 50px;
+  font-size: 15px;
+  border: 0;
+  outline: none;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.button {
+  padding: 0;
+  margin-left: 2rem;
+  height: 52px;
+  width: 12rem;
+  border-radius: 2px;
+  background-color: white;
+  border: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(85, 89, 193);
+  outline: none;
+}
