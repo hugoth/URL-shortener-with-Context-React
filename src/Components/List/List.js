@@ -21,8 +21,14 @@ const List = () => {
                       <a href={url.original}>{url.original}</a>
                     </p>
                     <p>
-                      <a href={"http://localhost:3003/" + url.shorten}>
-                        {"http://localhost:3003/" + url.shorten}
+                      <a
+                        href={
+                          "https://short-url-server-hugo-tessier.herokuapp.com/" +
+                          url.shorten
+                        }
+                      >
+                        {"https://short-url-server-hugo-tessier.herokuapp.com/" +
+                          url.shorten}
                       </a>
                     </p>
                     <p id="visits-result">{url.visits}</p>
