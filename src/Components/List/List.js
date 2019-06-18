@@ -23,11 +23,11 @@ const List = () => {
                     <p>
                       <a
                         href={
-                          "https://short-url-server-hugo-tessier.herokuapp.com/" +
+                          "https://short-url-hugo-tessier.herokuapp.com/" +
                           url.shorten
                         }
                       >
-                        {"https://short-url-server-hugo-tessier.herokuapp.com/" +
+                        {"https://short-url-hugo-tessier.herokuapp.com/" +
                           url.shorten}
                       </a>
                     </p>
