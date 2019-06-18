@@ -10,7 +10,7 @@ const List = () => {
           <div className="list-title">
             <p>Original-Url</p>
             <p>Short-Url</p>
-            <p id="visits">Visits</p>
+            <p id="visits-title">Visits</p>
           </div>
           <ul className="list-url">
             {context.urls &&
@@ -25,7 +25,7 @@ const List = () => {
                         {"http://localhost:3003/" + url.shorten}
                       </a>
                     </p>
-                    <p id="visits">{url.visits}</p>
+                    <p id="visits-result">{url.visits}</p>
                   </li>
                 );
               })}

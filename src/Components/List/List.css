@@ -30,6 +30,11 @@
   border-bottom: 1px solid grey;
 }
 
-#visits {
+#visits-title {
+  width: 5rem;
+  margin-right: 1rem;
+}
+
+#visits-result {
   width: 5rem;
 }
