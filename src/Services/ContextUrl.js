@@ -20,7 +20,7 @@ class ContextUrl extends Component {
   handleSubmit = async e => {
     e.preventDefault();
     await axios
-      .post("http://localhost:3003/url/create", {
+      .post("https://short-url-server-hugo-tessier.herokuapp.com/url/create", {
         url: this.state.url
       })
       .then(response => {
@@ -59,7 +59,9 @@ class ContextUrl extends Component {
   }
 
   async componentDidMount() {
-    const response = await axios.get("http://localhost:3003/url");
+    const response = await axios.get(
+      "https://short-url-server-hugo-tessier.herokuapp.com/url"
+    );
     this.setState({ urls: response.data });
   }
 }
