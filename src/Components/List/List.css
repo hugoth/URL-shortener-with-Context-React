@@ -25,9 +25,9 @@
 .list-url p {
   width: 30rem;
   height: 3rem;
-  padding-left: 2rem;
-
+  padding-left: 1rem;
   border-bottom: 1px solid grey;
+  font-size: 13px;
 }
 
 #visits-title {
